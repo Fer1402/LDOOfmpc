@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+	
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Fernanda Castillo">
+
+    <title>Formulario</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+  
+
+	
+<center>
+		<script type="text/javascript">
+//<![CDATA[
+var date = new Date();
+var d  = date.getDate();
+var day = (d < 10) ? '0' + d : d;
+var m = date.getMonth() + 1;
+var month = (m < 10) ? '0' + m : m;
+var yy = date.getYear();
+var year = (yy < 1000) ? yy + 1900 : yy;
+document.write(day + "/" + month + "/" + year);
+//]]>
+</script>
+
+<script type="text/javascript">
+function startTime(){
+today=new Date();
+h=today.getHours();
+m=today.getMinutes();
+s=today.getSeconds();
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('reloj').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);}
+function checkTime(i)
+{if (i<10) {i="0" + i;}return i;}
+window.onload=function(){startTime();}
+</script>
+<div id="reloj" style="font-size:20px;"></div>
+</center>
+
+  
+  			<div align="left">
+<img src=" C:\Users\osnap\Downloads\descarga.jpg" alt="Facultad de Ciencias Fisico Matematicas" style="width:150px;height:150px;">
+</div >
+  
+ 
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Facultad de Ciencias Fisico Matematicas</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container d-flex h-100 align-items-center">
+        <div class="mx-auto text-center">
+          <h1 class="mx-auto my-0 text-uppercase">SEMESTRE AGOSTO - DICIEMBRE 2018</h1>
+          <h2 class="text-white-50 mx-auto mt-2 mb-5">Proyecto llevado acabo por alumnos de nuestra facultad</h2>
+          <a href="#about" class="btn btn-primary js-scroll-trigger">EMPEZAR</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="about-section text-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="text-white mb-4">FORMULARIO PARA ASESORIAS ACADEMICAS</h2>
+				
+			
+
+            <p class="text-white-50">FACULTAD DE CIENCIAS FISICO MATEMATICAS
+            <a href="http://startbootstrap.com/template-overviews/grayscale/"></a>. </p>
+		
+          </div>
+        </div>
+        <img src="C:\Users\osnap\Downloads\ALUMNOS.jpg" class="" alt="" style="width:800px;height:650px;">
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section bg-light">
+      <div class="container">
+
+        <!-- Featured Project Row -->
+        <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+          <div class="col-xl-8 col-lg-7">
+            <img class="" src="C:\Users\osnap\Downloads\POZO.jpg" alt="" style= "width:700px;height:550px;">
+          </div>
+          <div class="col-xl-4 col-lg-5">
+            <div class="featured-text text-center text-lg-left">
+              <h4>PROPOSITO - PROYECTO</h4>
+              <p class="text-black-50 mb-0">Nuestro proposito como facultad es que nuestros alumnos convivan de una manera sana y el espiritu de la humildad ronde por sus vidas, es por eso que se inician estos talleres de apoyo</p>
+            </div>
+          </div>
+        </div>
+		
+  <!-- Project One Row -->
+        <div class="row justify-content-center no-gutters mb-5 mb-lg-0">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="C:\Users\osnap\Downloads\talleres.jpg" alt="">
+          </div>
+          <div class="col-lg-6">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-left">
+                  <h4 class="text-white">TALLERES A IMPARTIR</h4>
+                  <p class="mb-0 text-white-50">Materias como matematicas, cálculo entre otras. impartidas por alumnos de nuestra institución  </p>
+                  <hr class="d-none d-lg-block mb-0 ml-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Two Row -->
+        <div class="row justify-content-center no-gutters">
+          <div class="col-lg-6">
+            <img class="img-fluid" src="C:\Users\osnap\Downloads\fm.jpg" alt="">
+          </div>
+          <div class="col-lg-6 order-lg-first">
+            <div class="bg-black text-center h-100 project">
+              <div class="d-flex h-100">
+                <div class="project-text w-100 my-auto text-center text-lg-right">
+                  <h4 class="text-white">INFORMACIÓN IMPORTANTE</h4>
+                  <p class="mb-0 text-white-50">Estos talleres por ningún motivo tendrán costo, son para apoyo dentro de su desarrollo estudiantil.<br>
+				  A continuación el formulario a llenar:</p>
+                  <hr class="d-none d-lg-block mb-0 mr-0">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+	<form>
+		<center>
+		
+		<h4>LLENAR CORRECTAMENTE EL SIGUIENTE FORMULARIO PARA SER TOMADO EN CUENTA</h4>
+		
+		Primer Nombre:<br>
+  <input type="text"  placeholder = "Escribe tu nombre" name="Primer nombre"><br>
+  
+		  Password:<br>
+		  <input type="password"  placeholder = "Escribe tu password" name="Password"><br>
+		</form>
+
+		E-mail:<br> 
+		<input type="email"  placeholder = "Escribe tu E-mail" name="emailaddress"><br>
+		</form>
+		
+		<input type="submit" onclick="alert('DATOS ENVIADOS')" value="Enviar"> 
+		<input type="reset"  value="Cancelar">
+		
+		</center>
+		
+		<p1><strong><center><u>Los datos recolectados son para fines educativos y de beneficio personal, en caso de que haya algo fuera de lo normal se le reportara y sancionara por los hechos cometidos</u></center></strong></p1> 
+		
+		 <hr/>
+		 
+		  <h2>HORARIOS DE ASESORIAS DE MATEMATICAS</h2>
+			<h3>Preguntar por el aula en prefectura</h3>
+			
+			
+			
+		 <table style="width:100%">
+  <tr>
+    <th>Matematicas</th>
+    <th>Fisica</th> 
+    <th>Ciencias computacionales</th>
+	<th>Actuaria</th> 
+    <th>Multimedia y Animación Digital</th> 
+    <th>Seguridad en TI</th>
+  </tr>
+  <tr>
+    <td>L - 1:00pm</td>
+	<td>M - 1:00pm</td>
+	<td>MI - 1:00pm</td>
+	<td>JU - 1:00pm</td>
+    <td>VI -1:00pm</td>
+	<td>SAB - 1:00pm</td>
+  </tr>
+  <tr>
+    <td>L - 3:00pm</td>
+	<td>M - 3:00pm</td>
+	<td>MI - 3:00pm</td>
+	<td>JU - 3:00pm</td>
+    <td>VI -3:00pm</td>
+	<td>SAB - 3:00pm</td>
+  </tr>
+  <tr>
+    <td>L - 4:00pm</td>
+	<td>M - 4:00pm</td>
+	<td>MI - 4:00pm</td>
+	<td>JU - 4:00pm</td>
+    <td>VI -4:00pm</td>
+	<td>SAB - NO HAY</td>
+  </tr>
+   <tr>
+    <td>L - 6:00pm</td>
+	<td>M - 6:00pm</td>
+	<td>MI - 6:00pm</td>
+	<td>JU - 6:00pm</td>
+    <td>VI -6:00pm</td>
+	<td>SAB - NO HAY</td>
+  </tr>
+   <tr>
+    <td>L - 6:30pm</td>
+	<td>M - 6:30pm</td>
+	<td>MI - 6:30pm</td>
+	<td>JU - 6:30pm</td>
+    <td>VI -6:30pm</td>
+	<td>SAB - NO HAY</td>
+  </tr>
+  
+</table>
+
+	<link rel="stylesheet"href="stylesnew.css"/>
+ 
+	</hr>
+	</hr>
+	
+	<p2>FACULTAD DE CIENCIAS FISICO MATEMATICAS</p2>
+				
+	<div align="left">
+<iframe width="400" height="400" src="https://www.youtube.com/embed/RoZN7FDruwE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+	
+	<center>
+	<p3><strong>Ubicado en: Universidad Autónoma de Nuevo León<br>
+		Dirección: Pedro de Alba, Ciudad Universitaria, 66451 San Nicolás de los Garza, N.L.<br>
+		Horario: <br>
+		Abierto ⋅ Horario de cierre: 22:00<br>
+		Teléfono: 01 81 8329 4030<br></strong></p3> 
+		</center>
+		</div>
+        </div>
+      </div>
+    </section>
+
+   
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+	
+	</body>
+
+</html>
