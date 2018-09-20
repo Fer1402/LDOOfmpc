@@ -1,0 +1,53 @@
+<%-- 
+    Document   : DATOS
+    Created on : 19/09/2018, 09:39:11 PM
+    Author     : osnap
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>DATOS</title>
+    </head>
+    <body>
+        <h1>LOS DATOS SON:</h1>
+         
+        <%!
+        
+        String PN; 
+        String SN;
+        String PA;
+        String SA;
+        String F; 
+        String EA;
+        String PW; 
+        %>
+        
+        <% 
+        PN=request.getParameter("PN");
+        SN=request.getParameter("SN");
+        PA=request.getParameter("PA");
+        SA=request.getParameter("SA");
+        F=request.getParameter("F");
+        EA=request.getParameter("EA");
+        PW=request.getParameter("PW");
+        %>
+        
+         
+            
+        <p><strong>1.Primer nombre:</strong></p><%= PN %> <br>
+            <p><strong>2.Segundo nombre:</strong></p><%= SN %> <br>
+            <p><strong>3.Primer Apellido:</strong></p><%= PA %> <br>
+            <p><strong>4.Segundo Apellido:</strong></p><%= SA %> <br>
+            <p><strong>5.Fecha de nacimiento:</strong></p><%= F %> <br>
+            <p><strong>6.Correo electronico:</strong></p><%= EA %> <br>
+            <p><strong>7.Clave:</strong></p><%= PW %> <br>
+         
+        
+
+        
+        
+    </body>
+</html>
