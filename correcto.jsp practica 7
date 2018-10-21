@@ -1,0 +1,20 @@
+<%-- 
+    Document   : Correcto
+    Created on : 20/10/2018, 07:32:08 PM
+    Author     : osnap
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>Tu sesión ha sido abierta: <%=usu.getUsuario()%></h1>
+        <p> Tu clave es:<%= usu.getClave()%> </p>  
+        <p> Show cookie</p>
+      <a href="dargalleta"> Cookies!</a>
+    </body>
+</html>
