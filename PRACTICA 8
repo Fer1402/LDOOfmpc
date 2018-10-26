@@ -1,0 +1,50 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija los encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, seleccione Herramientas | Plantillas
+ * y abrir la plantilla en el editor.
+ * /
+paquete  Controlador ;
+
+importar  java.sql.Connection ;
+importar  java.sql.DriverManager ;
+importar  java.sql.SQLException ;
+
+/ **
+ *
+* @autor osnap
+ * /
+ clase  pública conexion {
+ 
+    Private  String  USERNAME  =  " xim " ;
+     cadena  privada CONTRASEÑA  =  " hola33 " ;
+     cadena  privada HOST  =  " localhost " ;
+     cuerda  privada PORT  =  " 1527 " ;
+    private  String  DATABASE  =  " login " ;
+    private  String  CLASSNAME  =  " java.sql.Driver " ;
+     URL de cadena  privada = " jdbc: derby: // " + HOST + " : " + PORT + " / " + DATABASE ; 
+     Conexión privada con;
+    
+    
+     Conexión pública () lanza  SQLException {
+        prueba {
+            Clase . forName ( CLASSNAME );
+            con =  DriverManager . getConnection ( URL , USERNAME , PASSWORD );
+        } catch ( ClassNotFoundException e) {
+            Sistema . err . println ( " ERROR "  + e);
+            
+        } captura ( SQLException e) {
+            Sistema . err . println ( " ERROR "  + e);
+            
+        } 
+    }
+    
+     Conexión  pública getConexion () {
+        volver con
+        
+    }
+    
+    public  static  void  main ( String [] args ) lanza  SQLException {
+        Conexion con =  new  Conexion ();
+        
+    }
+}
