@@ -1,0 +1,92 @@
+/ *
+ * Para cambiar este encabezado de licencia, elija los encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, seleccione Herramientas | Plantillas
+ * y abrir la plantilla en el editor.
+ * /
+paquete  Servlet ;
+
+importación  Controlador.Consulta ;
+import  java.io.IOException ;
+importar  java.io.PrintWriter ;
+importar  javax.servlet.ServletException ;
+importar  javax.servlet.http.HttpServlet ;
+importar  javax.servlet.http.HttpServletRequest ;
+importar  javax.servlet.http.HttpServletResponse ;
+
+/ **
+ *
+* @autor osnap
+ * /
+ clase  pública InicioSesion  extiende  HttpServlet {
+
+    / **
+     * Procesa las solicitudes de HTTP < código > GET </code> y < código > POST </code>
+     * Métodos.
+     *
+     * @ solicitud de servlet solicitud de param
+     * @param response servlet response
+     * @Throws ServletException si se produce un error en servlet específica
+     * @ throws IOException si se produce un error de E / S
+     * /
+    protegida  vacío  processRequest ( HttpServletRequest  solicitud , HttpServletResponse  respuesta )
+            lanza la  excepción ServletException , IOException {
+        respuesta . setContentType ( " text / html; charset = UTF-8 " );
+       
+       PrintWriter out = respuesta . getWriter ();
+       
+       Cadena usuario = solicitud . getParameter ( " usuario " );
+       String contraseña = solicitud . getParameter ( " contact " );
+       
+       Consulta co =  nueva  Consulta ();
+       if (co . autenticacion (usuario, contraseña)) {
+           respuesta . sendRedirect ( " menu.jsp " );
+       } else {
+           respuesta . sendRedirect ( " index.jsp " );
+           
+       }
+       
+       
+       
+       
+    }
+
+    // <editor-fold defaultstate = "colapso" desc = "Métodos HttpServlet. Haga clic en el signo + a la izquierda para editar el código.">
+    / **
+     * Maneja el método HTTP < código > GET </code>.
+     *
+     * @ solicitud de servlet solicitud de param
+     * @param response servlet response
+     * @Throws ServletException si se produce un error en servlet específica
+     * @ throws IOException si se produce un error de E / S
+     * /
+    @Anular
+    protegida  vacío  doGet ( HttpServletRequest  solicitud , HttpServletResponse  respuesta )
+            lanza la  excepción ServletException , IOException {
+        processRequest (solicitud, respuesta);
+    }
+
+    / **
+     * Maneja el método HTTP < code > POST </code>.
+     *
+     * @ solicitud de servlet solicitud de param
+     * @param response servlet response
+     * @Throws ServletException si se produce un error en servlet específica
+     * @ throws IOException si se produce un error de E / S
+     * /
+    @Anular
+    protegida  vacío  doPost ( HttpServletRequest  solicitud , HttpServletResponse  respuesta )
+            lanza la  excepción ServletException , IOException {
+        processRequest (solicitud, respuesta);
+    }
+
+    / **
+     * Devuelve una breve descripción del servlet.
+     *
+     * @return a String que contiene la descripción del servlet
+     * /
+    @Anular
+     Cadena  pública getServletInfo () {
+        volver  " Breve descripción " ;
+    } // </editor-fold>
+
+}
