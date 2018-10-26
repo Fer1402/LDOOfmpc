@@ -1,0 +1,84 @@
+*
+ * Para cambiar este encabezado de licencia, elija los encabezados de licencia en Propiedades del proyecto.
+* Para cambiar este archivo de plantilla, seleccione Herramientas | Plantillas
+ * y abrir la plantilla en el editor.
+ * /
+paquete  Controlador ;
+
+importar  java.sql.PreparedStatement ;
+import  java.sql.ResultSet ;
+importar  java.sql.SQLException ;
+
+/ **
+ *
+* @autor osnap
+ * /
+ Consulta pública de clase  extiende Conexion {  
+
+     Autenticacion booleana  pública ( String usuario , String contrase ñ a ) {  
+        PreparedStatement pst =  null ;
+        ResultSet rs =  null ;
+
+        prueba {
+            String consulta =  " select * from usuario donde usuario =? And password =? " ;
+            pst = getConexion () . prepareStatement (consulta, ResultSet . TYPE_SCROLL_INSENSITIVE , ResultSet . CONCUR_UPDATABLE );
+            pst . setString ( 1 , usuario);
+            pst . setString ( 2 , contraseña);
+            rs = pst . ejecutar la solicitud();
+
+            if ( ! rs . next ()) {
+            } else {
+                volver  verdadera ;
+            }
+
+        } captura ( SQLException e) {
+            Sistema . err . println ( " ERROR "  + e);
+        } finalmente {
+            prueba {
+                if (getConexion () ! =  null ) {
+                    getConexion () . cerrar();
+                }
+                si (pst ! =  nulo ) {
+                    pst . cerrar();
+                }
+                if (rs ! =  null ) {
+                    rs . cerrar();
+                }
+            } captura ( SQLException e) {
+                Sistema . err . println ( " ERROR "  + e);
+            }
+
+        }
+
+        volver  falsa ;
+    }
+
+     registrador booleano  público ( String usuario , String contrase ñ a ) {  
+
+        PreparedStatement pst =  null ;
+
+        prueba {
+            String consulta =  " insertar en valores de usuario (usuario, contraseña) (?,?) " ;
+            pst = getConexion () . preparaciónStatement (consulta);
+            pst . setString ( 1 , usuario);
+            pst . setString ( 2 , contraseña);
+            
+            if (pst . executeUpdate () ==  1 ) {
+                volver  verdadera ;
+            }
+        } catch ( SQLException ex) {
+            Sistema . err . println ( " ERROR "  + ex);
+        } finalmente {
+           prueba {
+               if (getConexion () ! =  null ) getConexion () . cerrar();
+               if (pst ! =  null ) pst . cerrar();
+           } captura ( SQLException e) {
+               Sistema . err . println ( " ERROR "  + e);
+           }
+            
+        }
+        
+        volver  falsa ;
+    }
+    
+}
