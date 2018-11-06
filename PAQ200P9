@@ -1,0 +1,18 @@
+/**
+ *
+ * @author osnap
+ */
+public class Paquete200 extends PlanTelcel{
+    
+     @Override
+    public void descripcionPaquete(){
+        System.out.println("*------ PAQUETE 200$ ACTIVADO -----------*");
+        System.out.println("*|          	200 MB                  |*");
+        System.out.println("*|    Minutos y mensajes ilimitados     |*");
+        System.out.println("*|    2000 MB para mensajeria (Whatsapp)|*");
+        System.out.println("*|    * Redes sociales                  |*");
+        System.out.println("*|   Vigencia su paquete es de 30 dias *| ");
+        System.out.println("*----------------------------------------*");
+    
+    }
+}
