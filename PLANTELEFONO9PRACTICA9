@@ -1,0 +1,24 @@
+*
+ * @author osnap
+ */
+public class PlanTelefonoFactory {
+    
+    public PlanTelcel getPaquete(int tipoPaquete){
+    if(tipoPaquete == 150){
+      return new Paquete150();
+    }
+    
+    if(tipoPaquete == 80){
+      return new Paquete80();
+    }
+    
+    if(tipoPaquete == 200){
+        return new Paquete200();
+               
+    }
+       
+    return null;
+    
+    }
+    
+}
