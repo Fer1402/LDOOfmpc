@@ -1,0 +1,24 @@
+* To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package FactoryMethod;
+
+/**
+ *
+ * @author osnap
+ */
+public abstract class PlanTelefono {
+    
+    private String telefono;
+    
+    public String getTelefono(){
+        return telefono;
+    }
+    
+    public void setTelefono(String telefono){
+        this.telefono = telefono;
+    }
+    
+    public abstract void descripcionPaquete();
+    
+}
