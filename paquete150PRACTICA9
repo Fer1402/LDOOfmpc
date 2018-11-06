@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package FactoryMethod;
+
+/**
+ *
+ * @author osnap
+ */
+public class Paquete150 extends PlanTelcel{
+    
+    @Override
+    public void descripcionPaquete(){
+        System.out.println("*------ PAQUETE 150$ ACTIVADO ------------*");
+        System.out.println("*|                150 MB                 |*");
+        System.out.println("*|    Minutos y mensajes ilimitados     |*");
+        System.out.println("*|    No aplica redes sociales          |*");
+        System.out.println("*|    Vigencia su paquete es de 25 dias *| ");
+        System.out.println("*----------------------------------------*");
+       
+    }
+    
+}
